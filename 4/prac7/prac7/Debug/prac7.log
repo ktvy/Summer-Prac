@@ -1,0 +1,4 @@
+﻿  main.c
+d:\projects\prac7\prac7\main.c(51): warning C4018: <: несоответствие типов со знаком и без знака
+  prac7.vcxproj -> D:\Projects\prac7\Debug\prac7.exe
+  prac7.vcxproj -> D:\Projects\prac7\Debug\prac7.pdb (Partial PDB)
