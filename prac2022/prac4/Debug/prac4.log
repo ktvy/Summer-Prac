@@ -1,0 +1,5 @@
+﻿  main.c
+d:\projects\prac4\prac4\main.c(35): warning C4047: !=: "int" отличается по уровням косвенного обращения от "void *"
+d:\projects\prac4\prac4\main.c(61): warning C4047: !=: "int" отличается по уровням косвенного обращения от "void *"
+  prac4.vcxproj -> D:\Projects\prac4\Debug\prac4.exe
+  prac4.vcxproj -> D:\Projects\prac4\Debug\prac4.pdb (Partial PDB)

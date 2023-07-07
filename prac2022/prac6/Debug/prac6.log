@@ -1,0 +1,5 @@
+﻿  prac6.c
+d:\projects\prac6\prac6\prac6.c(56): warning C4047: !=: "int" отличается по уровням косвенного обращения от "void *"
+d:\projects\prac6\prac6\prac6.c(64): warning C4715: my_strcmp: значение возвращается не при всех путях выполнения
+  prac6.vcxproj -> D:\Projects\prac6\Debug\prac6.exe
+  prac6.vcxproj -> D:\Projects\prac6\Debug\prac6.pdb (Partial PDB)
