@@ -1,0 +1,28 @@
+﻿  Source.c
+C:\Users\user\source\repos\Project18\Project18\Source.c(14,24): warning C4013: initialization: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\user\source\repos\Project18\Project18\Source.c(17,13): warning C4013: conclusion: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\user\source\repos\Project18\Project18\Source.c(19,11): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\user\source\repos\Project18\Project18\Source.c(19,11): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\user\source\repos\Project18\Project18\Source.c(19,11): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+C:\Users\user\source\repos\Project18\Project18\Source.c(19,11): message : этот аргумент используется в качестве размера буфера
+C:\Users\user\source\repos\Project18\Project18\Source.c(22,16): warning C4013: minus: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\user\source\repos\Project18\Project18\Source.c(22,27): error C2440: =: невозможно преобразовать "int" в "bigint"
+C:\Users\user\source\repos\Project18\Project18\Source.c(26,15): warning C4013: plus: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\user\source\repos\Project18\Project18\Source.c(26,26): error C2440: =: невозможно преобразовать "int" в "bigint"
+C:\Users\user\source\repos\Project18\Project18\Source.c(35,54): warning C4142: "conclusion": неопасное переопределение типа
+C:\Users\user\source\repos\Project18\Project18\Source.c(40,44): warning C4474: "printf_s" : для строки формата передано слишком много аргументов
+C:\Users\user\source\repos\Project18\Project18\Source.c(40,44): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 2
+C:\Users\user\source\repos\Project18\Project18\Source.c(66,65): warning C4142: "initialization": неопасное переопределение типа
+C:\Users\user\source\repos\Project18\Project18\Source.c(75,32): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\source\repos\Project18\Project18\Source.c(94,15): error C2371: minus: переопределение; различные базовые типы
+C:\Users\user\source\repos\Project18\Project18\Source.c(96,19): warning C4013: compare: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\user\source\repos\Project18\Project18\Source.c(102,26): error C2440: =: невозможно преобразовать "int" в "bigint"
+C:\Users\user\source\repos\Project18\Project18\Source.c(121,11): warning C4047: =: "bigint *" отличается по уровням косвенного обращения от "unsigned int **"
+C:\Users\user\source\repos\Project18\Project18\Source.c(129,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\source\repos\Project18\Project18\Source.c(145,55): warning C4013: remove_zeros: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\user\source\repos\Project18\Project18\Source.c(119,1): warning C4047: инициализация: "unsigned int **" отличается по уровням косвенного обращения от "bigint *"
+C:\Users\user\source\repos\Project18\Project18\Source.c(172,15): error C2371: plus: переопределение; различные базовые типы
+C:\Users\user\source\repos\Project18\Project18\Source.c(176,17): warning C4047: =: "char" отличается по уровням косвенного обращения от "char [2]"
+C:\Users\user\source\repos\Project18\Project18\Source.c(185,57): error C2440: =: невозможно преобразовать "int" в "bigint"
+C:\Users\user\source\repos\Project18\Project18\Source.c(206,64): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\source\repos\Project18\Project18\Source.c(211,64): warning C4018: <: несоответствие типов со знаком и без знака

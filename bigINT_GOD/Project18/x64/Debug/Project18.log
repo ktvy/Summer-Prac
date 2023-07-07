@@ -1,0 +1,14 @@
+﻿  add.c
+C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\Project18\add.c(7,17): warning C4047: =: "char" отличается по уровням косвенного обращения от "char [2]"
+C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\Project18\add.c(44,64): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\Project18\add.c(49,64): warning C4018: <: несоответствие типов со знаком и без знака
+  compare.c
+  init.c
+C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\Project18\init.c(32,22): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  print.c
+C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\Project18\print.c(8,42): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\Project18\print.c(8,42): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 2
+  main.c
+  subtraction.c
+  Создание кода...
+  Project18.vcxproj -> C:\Users\NoteS\OneDrive\Рабочий стол\bigINT_GOD\x64\Debug\Project18.exe
