@@ -1,0 +1,60 @@
+HBITMAP GetGraystyleBitmap (HBITMAP srcBitmap) {
+
+
+BITMAP bitmap;
+HBITMAP dstBitmap;
+unsigned char *bits;
+unsigned char *pBits;
+unsigned int pixelCount;
+unsigned int bytesPixel;
+int i, j;
+
+
+    if (!GetObject(srcBitmap,sizeof(BITMAP),&bitmap)) {
+		return NULL;
+        }
+
+    if( (bitmap.bmBitsPixel != 24) && (bitmap.bmBitsPixel != 32) ){
+        //MessageBox (NULL, "", "Изображение должно содержать 32 или 24 бита на пиксель", MB_OK);
+        return NULL;
+        }
+
+    pixelCount = bitmap.bmHeight * bitmap.bmWidth;
+
+    bytesPixel = bitmap.bmBitsPixel / 8;
+
+    bits = (unsigned char*) malloc (bitmap.bmWidthBytes * bitmap.bmHeight);
+    if (!bits) {
+        //MessageBox(HwndMainWindow,"","Ошибка выделения памяти",MB_OK);
+        return NULL;
+        }
+
+    GetBitmapBits (srcBitmap, bitmap.bmBitsPixel * pixelCount, (void*)bits);
+
+    pBits = bits;
+
+    for (i = 0; i < bitmap.bmHeight; ++i) {
+        pBits = bits + i * bitmap.bmWidthBytes;
+        for (j = 0; j < bitmap.bmWidth; ++j) {
+            unsigned int pixel = 0;
+            unsigned int r, g, b;
+            unsigned int gray;
+            memcpy (&pixel, pBits, bytesPixel);
+
+            r = pixel & 0xFF;
+            g = (pixel >> 8) & 0xFF;
+            b = (pixel >> 16) & 0xFF;
+            gray = (r + g + b) / 3;
+            pixel = gray | (gray << 8) | (gray << 16);
+
+            memcpy (pBits, &pixel, bytesPixel);
+            pBits += bytesPixel;
+            }
+        }
+
+    dstBitmap = CreateBitmap (bitmap.bmWidth, bitmap.bmHeight, 1, bitmap.bmBitsPixel, bits);
+
+    free (bits);
+
+    return dstBitmap;
+}
